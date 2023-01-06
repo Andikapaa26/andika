@@ -36,6 +36,8 @@
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/addkost">Tambahkan Map</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/addkost">Tambahkan Kost</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 btn-sm btn-success" href="{% url 'keluar' %}">Logout</a></li>
+                        {% else %}
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 btn-sm btn-success" href="{% url 'masuk' %}">Login</a></li>
                         {% endif%}
                     </ul>
                 </div>
